@@ -8,10 +8,10 @@ Raspberry Piは'Raspberry Pi3 ModelB'、OSは'Raspbian Stretch with desktop(NOOB
 ***
 ## 準備
 ### Raspberry PiにRPi-GP10を接続
-[README.md](../setup/README.md)を参考に下記の準備をおこなってください。  
-- 'Raspberry Pi'に'RPi-GP10'を接続  
-- OS('Raspbian)のアップデート
+[README.md](../README.md)を参考に下記の準備をおこなってください。  
+- OS(`RASPBIAN`)のインストール
 - GPIO40pinのI2C設定
+- 'Raspberry Pi'に'RPi-GP10'を接続  
   
 
 ### Pythonサンプルファイルを実行するディレクトリを作成
