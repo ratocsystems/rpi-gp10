@@ -32,7 +32,7 @@ ___
 
 - [RPi-GP10の各部名称と説明](./constitution/README.md)  
 
-- [RASPBIANの設定](./install/README.md)  
+- [Raspberry Pi OSの設定](./install/README.md)  
 
 - [RPi-GP10の設定と装着](./setup/README.md)  
 
