@@ -1,8 +1,14 @@
 # RPi-GP10用Pythonサンプルファイル
 
-RPi-GP10用Pythonサンプルファイルの使用方法について説明します。  
-Raspberry Piは'Raspberry Pi3 ModelB'、OSは'Raspbian Stretch with desktop(NOOBS:2018-03-14)'で説明します。
-サンプルファイルは`sampleGp10.py`です。  
+RPi-GP10用Pythonサンプルファイルの使用方法について説明します。
+Raspberry Pi 5以降とそれ以前で、使用するGPIO制御用ライブラリが異なるため、使用するGPIOライブラリ別に2種類のサンプルファイルを用意しています。
+|サンプルファイル|使用ライブラリ|説明|
+|:--:|:--:|:--:|
+|sampleGp10.py|RPI.GPIO|Raspberry Pi 3/4 用|
+|sampleGp10_Pi5.py|gpiod|Raspberry Pi 5 以降用|
+
+ここでは、Raspberry Piは'Raspberry Pi3 ModelB'、OSは'Raspberry Pi OS Version 2021-03-04'の環境で  
+サンプルファイル`sampleGp10.py`について説明します。  
 
   
 ***
