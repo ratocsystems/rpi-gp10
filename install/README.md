@@ -1,9 +1,9 @@
 # Raspberry Pi OSの設定
 
-Rapberry Pi用のOSである Raspberry Pi OS(旧Rasbian※)の設定について説明します。  
-Raspberry Pi本体は'Raspberry Pi4 ModelB'、
-Raspberry Pi Imagerは、'Raspberry Pi Imager 1.8.5'、
-OSは'Raspberry Pi OS Version 2024-03-07'で説明します。
+Rapberry Pi用のOSである Raspberry Pi OS(旧Rasbian※)の設定について説明します。<br>  
+Raspberry Pi本体は'Raspberry Pi4 ModelB'、<br>
+Raspberry Pi Imagerは、'Raspberry Pi Imager 1.8.5'、<br>
+OSは'Raspberry Pi OS Version 2024-03-07'で説明します。<br>
 ※2020年5月に名称が「Rasbian」から「Raspberry Pi OS」に変更されました。
 
 ## Raspberry Pi OSのインストール  
@@ -11,7 +11,7 @@ OSは'Raspberry Pi OS Version 2024-03-07'で説明します。
 
 ###	1. Class10のmicroSD(8～32G)を用意します。
 
-*64GB以上のSDカードの場合、exFATでフォーマットされます。
+*64GB以上のSDカードの場合、exFATでフォーマットされます。<br>
 Raspberry Pi OSはexFATに対応していませんので、別のツールを使ってFAT16またはFAT32でフォーマットする必要があります。*
 
 ### 2. Raspberry財団公式ホームページ( https://raspberrypi.org/software/ )でRaspberry Pi Imager をダウンロードしてインストールします。
@@ -66,7 +66,7 @@ Raspberry Pi OSはexFATに対応していませんので、別のツールを使
   ![11](./img/osInstall-11.png) 
   ![12](./img/osInstall-12.png) 
 
-3-7. 書き込みが終わると、以下の完了画面が表示されます。
+3-7. 書き込みが終わると、以下の完了画面が表示されます。<br>
 　　[続ける] をクリックして、microSDカードを取り外します。
 
   ![13](./img/osInstall-13.png) 
@@ -74,8 +74,8 @@ Raspberry Pi OSはexFATに対応していませんので、別のツールを使
 ### 4. OSの起動と日本語モードの設定
 
 4-1. microSDカードをRaspberry Pi基板に接続し起動します。  
-　　最初に国情報、ユーザー名、WiFi設定等の設定画面が表示されます。
-　　必要に応じて、タイムゾーンの設定、キーボードの設定、無線LANの国設定 等の設定を行います。
+　　最初に国情報、ユーザー名、WiFi設定等の設定画面が表示されます。<br>
+　　必要に応じて、タイムゾーンの設定、キーボードの設定、無線LANの国設定 等の設定を行います。<br>
 　　これらを設定後、再駆動します。
 
   ![14](./img/osInstall-14.png) 
