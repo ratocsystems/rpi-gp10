@@ -1,9 +1,9 @@
 # Raspberry Pi OSの設定
 
-Rapberry Pi用のOSである Raspberry Pi OS(Rasbian)の設定について説明します。  
-Raspberry Pi本体は'Raspberry Pi3 ModelB'、
-Raspberry Pi Imagerは、'Raspberry Pi Imager 1.6.2'、
-OSは'Raspberry Pi OS Version 2021-03-04'で説明します。
+Rapberry Pi用のOSである Raspberry Pi OS(旧Rasbian※)の設定について説明します。  
+Raspberry Pi本体は'Raspberry Pi4 ModelB'、
+Raspberry Pi Imagerは、'Raspberry Pi Imager 1.8.5'、
+OSは'Raspberry Pi OS Version 2024-03-07'で説明します。
 ※2020年5月に名称が「Rasbian」から「Raspberry Pi OS」に変更されました。
 
 ## Raspberry Pi OSのインストール  
@@ -32,76 +32,60 @@ Raspberry Pi OSはexFATに対応していませんので、別のツールを使
 
 3-1. Raspberry Pi Imagerが起動すると以下の画面が表示されます。
 
-   ![01](./img/osInstall-01.png)  
+  ![01](./img/osInstall-01.png)  
 
-3-2. [CHOOSE OS]をクリックして[Raspberry Pi OS (32-bit)]を選択します。
+3-2. [デバイスを選択]をクリックしてRaspberry Pi デバイスを選択します。
 
-   ![02](./img/osInstall-02.png) 
+  ![02](./img/osInstall-02.png) 
 
-3-3. [CHOOSE SD CARD]をクリックして、書き込み先のデバイス（SD Card）を選択します。
- 
+3-3. [OSを選択]をクリックして[Raspberry Pi OS (64-bit)]を選択します。
+
   ![03](./img/osInstall-03.png) 
-
-3-4. [WRITE] をクリックします。
-
   ![04](./img/osInstall-04.png) 
 
-3-5. 確認ダイアログ画面で [YES]を選択して、SD Cardへの書き込みを開始します。
-
+3-4. [ストレージを選択]をクリックして、書き込み先のデバイス（SD Card）を選択します。
+ 
   ![05](./img/osInstall-05.png) 
+  ![06](./img/osInstall-06.png) 
 
-3-6. 途中、書き込みの進捗状況が表示されます。
+3-5. [次へ] をクリックします。
 
-  ![06](./img/osInstall-07.png) 
+  ![07](./img/osInstall-07.png) 
+
+3-6. OSのカスタマイズ設定を変更が不要であれば、[いいえ] をクリックします。
+
+  ![08](./img/osInstall-08.png) 
+
+3-7. 確認ダイアログ画面で [はい]を選択して、SD Cardへの書き込みを開始します。
+
+  ![09](./img/osInstall-09.png) 
+
+3-8. 途中、書き込みの進捗状況が表示されます。
+
+  ![10](./img/osInstall-10.png) 
+  ![11](./img/osInstall-11.png) 
+  ![12](./img/osInstall-12.png) 
 
 3-7. 書き込みが終わると、以下の完了画面が表示されます。
-　　[CONTINUE] をクリックして、microSDカードを取り外します。
+　　[続ける] をクリックして、microSDカードを取り外します。
 
-  ![07](./img/osInstall-08.png) 
+  ![13](./img/osInstall-13.png) 
 
 ### 4. OSの起動と日本語モードの設定
 
 4-1. microSDカードをRaspberry Pi基板に接続し起動します。  
+　　最初に国情報、ユーザー名、WiFi設定等の設定画面が表示されます。
+　　必要に応じて、タイムゾーンの設定、キーボードの設定、無線LANの国設定 等の設定を行います。
+　　これらを設定後、再駆動します。
 
-  ![08](./img/osInstall-09.png) 
+  ![14](./img/osInstall-14.png) 
 
-4-2. [Preferense]-[Raspberry Pi Configuration]をクリックします。
-
-  ![09](./img/piConfig-01.jpg) 
-
-4-3. [Localisation] をクリックします。
-
-  ![10](./img/piConfig-02.jpg) 
-
-4-4. [Set Locale...] をクリックします。
-
-  ![11](./img/piConfig-03.jpg) 
-
-4-5. Language 項目で[ja(Japanese)] を
-   Character Set項目で[EUC-JP]か、[UTF-8 ]を選択します。
-   最後に[OK]クリックします。
-
-  ![12](./img/piConfig-04.jpg) 
-
-4-6. [Raspberry Pi Configuration]の画面で[OK]をクリックすると、
-　[Reboot needed] の再起動の確認が表示されるので[Yes]をクリックします。
-
-4-7. 再起動後、Raspberry Pi OSの日本語モードの画面が表示されます。
-
-4-8. [設定]-[Raspberry Pi の設定]をクリックします。
-
-   ![01](./img/i2cSetting-01.jpg)  
-
-4-9. [ローカライゼーション] をクリックします。
-
-  必要に応じて、タイムゾーンの設定、キーボードの設定、無線LANの国設定 等の設定を行います。
-
-引き続き、I2Cの設定を行います。
 
 ## I2Cの有効設定  
 
 ### [Raspberry Pi の設定]の[インターフェース]で"I2C"を有効にします。
 
-   ![02](./img/i2cSetting-02.jpg)  
+   ![15](./img/piConfig-01.png)  
+   ![16](./img/i2cSetting-01.png)  
 
 設定を反映させるため、OSを再起動すれば、Raspberry Pi OS のインストールと設定は完了です。
